@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simvo page</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Simvo Africa</h1>
+        <p>This is a dream come true</p>
+        <button onclick="makeDreamComeTrue()">Make dream come true</button>
+</body>
+</html>
+
+<style>
+    body {
+        background-image: url("./images/bk.png");
+        background-size: cover;
+    }
+
+    h1 {
+        color:blue;
+    }
+    button:hover {
+        background-color: red;
+        cursor: pointer;
+        font-style: 20px;
+    }
+
+    #title {
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+    }
+</style>
+
+<script>
+function makeDreamComeTrue() {
+    document.body.style.background = "url('images/bk.png')";
+    document.body.style.backgroundSize = "cover";
+
+    document.getElementById("title").style.visibility = "hidden";
+}
+</script>
+        
